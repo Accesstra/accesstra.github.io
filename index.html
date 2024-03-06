@@ -2,12 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/Logo/LogoV3Big.svg" id="favicon-light">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/Logo/LogoV3BigWhite.svg" id="favicon-dark">
+    <!-- <link rel="icon" type="image/svg+xml" href="/src/assets/Logo/LogoV3BigWhite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accesstra</title>
+    <style>
+        #favicon-light, #favicon-dark {
+            display: none;
+        }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Funktion zum Erkennen des Farbmodus
+      function detectColorScheme() {
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              // Dark Mode aktiv
+              document.getElementById('favicon-light').removeAttribute('href');
+              document.getElementById('favicon-dark').setAttribute('href', '/src/assets/Logo/LogoV3BigWhite.svg');
+
+              console.log('Dark mode');
+          } else {
+              // Light Mode aktiv
+              document.getElementById('favicon-dark').removeAttribute('href');
+              document.getElementById('favicon-light').setAttribute('href', '/src/assets/Logo/LogoV3Big.svg');
+
+              console.log('Light mode');
+          }
+      }
+
+      // Laden der Funktion beim Laden der Seite
+      window.onload = detectColorScheme;
+  </script>  
   </body>
 </html>

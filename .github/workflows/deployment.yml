@@ -28,11 +28,11 @@ jobs:
           rm -rf node_modules
           # Kopieren Sie den Inhalt von dist in das aktuelle Verzeichnis
           cp -r dist/* .
-          # Delete dist folder
-          rm -rf dist
           # Fügen Sie alle Änderungen hinzu
           git add .
           # Committen Sie die Änderungen
           git commit -m "Deploying latest build"
           # Pushen Sie die Änderungen zum deployment-Branch
           git push origin deployment
+          # Delete dist folder
+          rm -rf dist

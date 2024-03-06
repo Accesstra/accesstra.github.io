@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/Logo/LogoV3Big.svg" id="favicon-light">
-    <link rel="icon" type="image/svg+xml" href="/src/assets/Logo/LogoV3BigWhite.svg" id="favicon-dark">
+    <link rel="icon" type="image/svg+xml" href="/LogoV3Big.svg" id="favicon-light">
+    <link rel="icon" type="image/svg+xml" href="/LogoV3BigWhite.svg" id="favicon-dark">
     <!-- <link rel="icon" type="image/svg+xml" href="/src/assets/Logo/LogoV3BigWhite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accesstra</title>
@@ -22,13 +22,13 @@
           if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
               // Dark Mode aktiv
               document.getElementById('favicon-light').removeAttribute('href');
-              document.getElementById('favicon-dark').setAttribute('href', '/src/assets/Logo/LogoV3BigWhite.svg');
+              document.getElementById('favicon-dark').setAttribute('href', '/LogoV3BigWhite.svg');
 
               console.log('Dark mode');
           } else {
               // Light Mode aktiv
               document.getElementById('favicon-dark').removeAttribute('href');
-              document.getElementById('favicon-light').setAttribute('href', '/src/assets/Logo/LogoV3Big.svg');
+              document.getElementById('favicon-light').setAttribute('href', '/LogoV3Big.svg');
 
               console.log('Light mode');
           }

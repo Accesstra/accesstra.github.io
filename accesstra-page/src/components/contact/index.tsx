@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SelectedPage } from "../../shared/types";
 import { useForm } from "react-hook-form";
-import ContactUsPageGraphic from "../../assets/ContactUsPageGraphic.png";
+import ContactUsPageGraphic from "../../assets/Logo/Ausweis4.svg";
 import HText from "../../shared/HText";
 
 type Props = {
@@ -40,16 +40,11 @@ const Contact = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            <span className="text-primary-500">SAG HALLO</span> WIR FREUEN UNS
           </HText>
-          <p className="my-5">
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-            vero eros et accumsan et iusto odio dignissim qui blandit praesent
-            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat.
+          <p className="my-5 text-lg">
+            Schreibe uns einfach eine Nachricht und wir melden uns bei dir
+            sobald wir können.
           </p>
         </motion.div>
 
@@ -69,7 +64,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <form
               target="_blank"
               onSubmit={onSubmit}
-              action="https://formsubmit.co/"
+              action="https://formsubmit.co/info@accesstra.tech"
               method="POST"
             >
               <input
@@ -108,7 +103,7 @@ const Contact = ({ setSelectedPage }: Props) => {
                 className={inputStyles}
                 rows={4}
                 cols={50}
-                placeholder="MESSAGE"
+                placeholder="NACHRICHT"
                 {...register("message", {
                   required: true,
                   maxLength: 2000,
@@ -124,9 +119,9 @@ const Contact = ({ setSelectedPage }: Props) => {
 
               <button
                 type="submit"
-                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                className="mt-5 rounded-lg text-xl bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white hover:bg-primary-300 hover:shadow-lg"
               >
-                SUBMIT
+                Absenden
               </button>
             </form>
           </motion.div>
@@ -142,7 +137,7 @@ const Contact = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <div className="md:before:content-[url('./assets/EvolveText.png')] w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]">
+            <div className="md:before:content-[url('./assets/Logo/ACCESSTRA4GREY.svg')] w-full before:absolute before:-bottom-10 before:-right-10 before:z-[-1]">
               <img
                 className="w-full"
                 alt="contact-us-page-graphic"

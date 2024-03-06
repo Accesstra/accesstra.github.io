@@ -1,11 +1,11 @@
 import { SelectedPage } from "../../shared/types";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../../shared/ActionButton";
-import HomePageText from "../../assets/HomePageText.png";
-import HomePageGraphic from "../../assets/HomePageGraphic.png";
+import HomePageText from "../../assets/Logo/Slogan.svg";
 import SponsorRedBull from "../../assets/SponsorRedBull.png";
 import SponsorForbes from "../../assets/SponsorForbes.png";
 import SponsorFortune from "../../assets/SponsorFortune.png";
+import Logo2 from "../../assets/Logo/LogoV3BigWhite.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -16,7 +16,7 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 h-full md:pb-0">
+    <section id="home" className="gap-16 bg-primary-300 py-10 h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
@@ -37,21 +37,24 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:z-[-1] before:-left-20 md:before:content-evolvetext">
+              <div className="before:absolute before:-top-20 before:z-[-1] before:ml-20 before:-left-20 md:before:content-evolvetext">
                 <img alt="home-page-text" src={HomePageText}></img>
               </div>
             </div>
 
-            <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+            <p className="mt-8 text-lg text-white ml-2">
+              Entdecken Sie mit Accesstra.tech die Zukunft der
+              Web-Barrierefreiheit. Unser Ziel ist es, das Internet für jeden
+              zugänglich zu machen – mit Tools und Schulungen, die Barrieren
+              abbauen und Inklusivität fördern. Sind Sie bereit, Ihre Website
+              für alle Menschen zu öffnen? Klicken Sie hier und beginnen Sie
+              Ihre Reise zu einer umfassenderen digitalen Welt.
             </p>
           </motion.div>
 
           {/* ACTION BUTTON */}
           <motion.div
-            className="mt-8 flex intems-center gap-8"
+            className="mt-8 mb-2 flex intems-center gap-8 text-lg text-primary-500"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -62,20 +65,18 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
+              What is Accesstra?
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.Contact)}
-              href={`#${SelectedPage.Contact}`}
-            >
-              <p>Learn More</p>
-            </AnchorLink>
+              onClick={() => setSelectedPage(SelectedPage.Benefits)}
+              href={`#${SelectedPage.Benefits}`}
+            ></AnchorLink>
           </motion.div>
         </div>
         {/* IMAGE */}
         <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
-          <img alt="home-page-graphic" src={HomePageGraphic}></img>
+          <img alt="Logo" src={Logo2}></img>
         </div>
       </motion.div>
 

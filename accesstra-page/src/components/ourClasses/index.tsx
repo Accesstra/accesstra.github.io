@@ -65,31 +65,19 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md:w-3/5">
-            <HText>OUR CLASSES</HText>
-            <p className="py-5">
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue duis
-              dolore te feugait nulla facilisi.
+          <div className="md:w-3/5 text-white">
+            <HText>Our Vision</HText>
+            <p className="py-5 text-white text-lg">
+              Treten Sie ein in die Ära der digitalen Inklusion mit
+              Accesstra.tech. Wir bieten wegweisende Lösungen, die Ihre Website
+              nicht nur konform, sondern vorbildlich in Sachen Barrierefreiheit
+              gestalten. Beginnen Sie jetzt und erweitern Sie Ihr Publikum mit
+              einem Internet, das wirklich für alle da ist. Erfahren Sie mehr
+              über unsere Innovationen – Ihr Weg zu einer zugänglichen
+              Webpräsenz beginnt hier.
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] whitespace-nowrap">
-            {classes.map((item: ClassType, index) => (
-              <Class
-                key={`${item.name}-${index}`}
-                name={item.name}
-                description={item.description}
-                image={item.image}
-              />
-            ))}
-          </ul>
-        </div>
       </motion.div>
     </section>
   );

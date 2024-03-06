@@ -7,18 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        "gray-20": "#F8F4EB",
-        "gray-50": "#EFE6E6",
-        "gray-100": "#DFCCCC",
-        "gray-500": "#5E0000",
-        "primary-100": "#FFE1E0",
-        "primary-300": "#FFA6A3",
-        "primary-500": "#FF6B66",
-        "secondary-400": "#FFCD58",
-        "secondary-500": "#FFC132",
+        "gray-20": "#FFFFFF",
+        "gray-50": "#F6F6F6",
+        "gray-100": "#B3B3B3",
+        "gray-500": "#6F6F6F",
+        "primary-100": "#364659",
+        "primary-300": "#223240",
+        "primary-500": "#010A0D",
+        "secondary-400": "#98A1A6",
+        "secondary-500": "#FFF13D",
       },
       backgroundImage: (theme) => ({
-        "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FF616A 100%)",
+        "gradient-darkblue": "linear-gradient(90deg, #223240 0%, #223240 100%)",
         "mobile-home": "url('./assets/HomePageGraphic.png')"
     }),
     fontFamily: {
@@ -26,7 +26,7 @@ export default {
       montserrat: ["Montserrat", "sans-serif"]
     },
     content: {
-      evolvetext: "url('./assets/EvolveText.png')",
+      evolvetext: "url('./assets/Logo/ACCESSTRA3.svg')",
       abstractwaves: "url('.assets/AbstractWaves.png')",
       sparkles: "url('.assets/Sparkles.png')",
       circles: "url('.assets/Circles.png')",

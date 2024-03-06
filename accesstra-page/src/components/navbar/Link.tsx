@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
-  const lowerCasePage = page.toLowerCase().trim() as SelectedPage;
+  const lowerCasePage = page.toLowerCase() as SelectedPage;
 
   return (
     <AnchorLink

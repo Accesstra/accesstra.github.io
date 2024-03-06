@@ -67,11 +67,6 @@ const Home = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               What is Accesstra?
             </ActionButton>
-            <AnchorLink
-              className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.Benefits)}
-              href={`#${SelectedPage.Benefits}`}
-            ></AnchorLink>
           </motion.div>
         </div>
         {/* IMAGE */}

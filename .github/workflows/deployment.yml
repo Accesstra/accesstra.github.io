@@ -27,6 +27,7 @@ jobs:
           else
             git checkout -b deployment
           fi
+          shopt -s dotglob
           rm -rf *
           mv dist/* .
           git add .

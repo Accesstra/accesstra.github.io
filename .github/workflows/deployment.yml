@@ -24,13 +24,13 @@ jobs:
           git config user.name "Accesstra"
           git fetch --all
           git checkout deployment
-          # Entfernen Sie den node_modules-Ordner, falls vorhanden
+
           rm -rf node_modules
-          # Kopieren Sie den Inhalt von dist in das aktuelle Verzeichnis
+
           cp -r dist/* .
-          # Fügen Sie alle Änderungen hinzu
+
           git add .
-          # Committen Sie die Änderungen
+
           git commit -m "Deploying latest build"
-          # Pushen Sie die Änderungen zum deployment-Branch
+
           git push origin deployment

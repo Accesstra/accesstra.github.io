@@ -22,9 +22,10 @@ jobs:
       - name: Deploy
         run: |
           git config user.name "Accesstra"
-
+          
           git fetch --all
           git checkout deployment
+          cp -r dist/* .
           git add .
           git commit -m "Deploying latest build"
           git push origin deployment

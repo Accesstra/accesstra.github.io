@@ -1,48 +1,6 @@
-import { ClassType, SelectedPage } from "../../shared/types";
-import image1 from "../../assets/image1.png";
-import image2 from "../../assets/image2.png";
-import image3 from "../../assets/image3.png";
-import image4 from "../../assets/image4.png";
-import image5 from "../../assets/image5.png";
-import image6 from "../../assets/image6.png";
+import { SelectedPage } from "../../shared/types";
 import { motion } from "framer-motion";
 import HText from "../../shared/HText";
-import Class from "./Class";
-
-const classes: Array<ClassType> = [
-  {
-    name: "Weight Training Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.",
-    image: image1,
-  },
-  {
-    name: "Yoga Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.",
-    image: image2,
-  },
-  {
-    name: "Ab Core Classes",
-    image: image3,
-  },
-  {
-    name: "Adventure Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.",
-    image: image4,
-  },
-  {
-    name: "Fitness Classes",
-    image: image5,
-  },
-  {
-    name: "Training Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.",
-    image: image6,
-  },
-];
 
 type Props = {
   setSelectedPage: (selectedPage: SelectedPage) => void;

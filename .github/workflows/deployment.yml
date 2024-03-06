@@ -1,4 +1,4 @@
-name: Deployment
+name: Build and deploy
 
 on:
   push:
@@ -34,5 +34,3 @@ jobs:
           git commit -m "Deploying latest build"
           # Pushen Sie die Änderungen zum deployment-Branch
           git push origin deployment
-          # Delete dist folder
-          rm -rf dist

@@ -22,12 +22,7 @@ jobs:
       - name: Deploy
         run: |
           git fetch --all
-          if git show-ref --quiet refs/remotes/origin/deployment; then
-            git checkout deployment
-          else
-            git checkout -b deployment
-          fi
-          shopt -s dotglob
+          git checkout deployment
           rm -rf *
           mv dist/* .
           git add .

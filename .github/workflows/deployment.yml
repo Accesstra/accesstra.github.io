@@ -21,7 +21,12 @@ jobs:
 
       - name: Deploy
         run: |
-          git checkout deployment
+          git fetch --all
+          if git show-ref --quiet refs/remotes/origin/deployment; then
+            git checkout deployment
+          else
+            git checkout -b deployment
+          fi
           rm -rf *
           mv dist/* .
           git add .

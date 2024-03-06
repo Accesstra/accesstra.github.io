@@ -27,7 +27,7 @@ jobs:
 
           rm -rf node_modules
 
-          cp -r ../dist/* .
+          cp -r dist/* .
 
           git add .
 

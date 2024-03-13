@@ -17,8 +17,9 @@ const Footer = () => {
         </div>
         <div className="mt-16 basis-1/4 md:mt-0 text-white">
           <h4 className="font-bold">Links</h4>
-          <p className="my-5">Verbinden Sie sich:</p>
-          <p className="my-5">https://www.linkedin.com/company/accesstra</p>
+          <p className="my-5"><a href="https://www.linkedin.com/company/accesstra" target="_blank" rel="noopener noreferrer" className="text-white">
+            LinkedIn.de
+          </a></p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0 text-white">
           <h4 className="font-bold">Kontaktieren Sie uns:</h4>

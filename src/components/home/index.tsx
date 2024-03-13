@@ -42,7 +42,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="mt-8 text-lg text-white ml-2">
-              Entdecken Sie mit Accesstra.tech die Zukunft der
+              Entdecken Sie mit Accesstra die Zukunft der
               Web-Barrierefreiheit. Unser Ziel ist es, das Internet für jeden
               zugänglich zu machen – mit Tools und Schulungen, die Barrieren
               abbauen und Inklusivität fördern. Sind Sie bereit, Ihre Website

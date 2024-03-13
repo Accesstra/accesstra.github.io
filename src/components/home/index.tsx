@@ -2,9 +2,9 @@ import { SelectedPage } from "../../shared/types";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../../shared/ActionButton";
 import HomePageText from "../../assets/Logo/Slogan.svg";
-import SponsorRedBull from "../../assets/SponsorRedBull.png";
-import SponsorForbes from "../../assets/SponsorForbes.png";
-import SponsorFortune from "../../assets/SponsorFortune.png";
+import SponsorCampusFounders from "../../assets/CampusFounders.svg";
+import SponsorTHKoeln from "../../assets/THKoeln.svg";
+import SponsorStartplatz from "../../assets/Startplatz.png";
 import Logo2 from "../../assets/Logo/LogoV3BigWhite.svg";
 import { motion } from "framer-motion";
 
@@ -79,9 +79,10 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className="h-[150px] w-full bg-primary-100 py-10 flex items-center">
           <div className="mx-auto w-5/6">
             <div className="flex w-full items-center justify-between gap-8">
-              <img alt="sponsor-redbull" src={SponsorRedBull} />
-              <img alt="sponsor-forbes" src={SponsorForbes} />
-              <img alt="sponsor-fortune" src={SponsorFortune} />
+            <img alt="sponsor-campusfounders" src={SponsorCampusFounders} style={{ width: "250px", height: "auto" }} />
+            <img alt="sponsor-thkoeln" src={SponsorTHKoeln} style={{ width: "150px", height: "auto" }} />
+            <img alt="sponsor-startplatz" src={SponsorStartplatz} style={{ width: "200px", height: "auto" }} />
+
             </div>
           </div>
         </div>

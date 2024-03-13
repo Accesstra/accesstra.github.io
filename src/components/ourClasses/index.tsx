@@ -24,15 +24,16 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5 text-white">
-            <HText>Our Vision</HText>
+            <HText>Unsere Vision</HText>
             <p className="py-5 text-white text-lg">
-              Treten Sie ein in die Ära der digitalen Inklusion mit
-              Accesstra.tech. Wir bieten wegweisende Lösungen, die Ihre Website
-              nicht nur konform, sondern vorbildlich in Sachen Barrierefreiheit
-              gestalten. Beginnen Sie jetzt und erweitern Sie Ihr Publikum mit
-              einem Internet, das wirklich für alle da ist. Erfahren Sie mehr
-              über unsere Innovationen – Ihr Weg zu einer zugänglichen
-              Webpräsenz beginnt hier.
+
+          Wir träumen von einem Internet, 
+          das wirklich für alle da ist – und wir haben die Werkzeuge, 
+          um diesen Traum Wirklichkeit werden zu lassen. Accesstra bietet innovative Lösungen,
+           um deine Website nicht nur regelkonform, sondern zu einem Leuchtturm der Zugänglichkeit zu machen.
+            Mit unserem frischen Wind in der digitalen Barrierefreiheit öffnen wir dir die Türen zu einem größerem Publikum.
+           Lass uns gemeinsam zeigen, dass das Internet ein Ort für uns alle ist.
+
             </p>
           </div>
         </motion.div>

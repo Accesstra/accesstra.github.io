@@ -7,6 +7,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../../shared/ActionButton";
 import AccesstraLogo from "/src/assets/Logo/ACCESSTRA0.svg";
 
+
 type Props = {
   isTopOfPage: boolean;
   selectedPage: SelectedPage;
@@ -27,7 +28,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/*Left-Side Navbar*/}
-            <img alt="logo" src={AccesstraLogo} />
             {/*Right-Side Navbar*/}
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>

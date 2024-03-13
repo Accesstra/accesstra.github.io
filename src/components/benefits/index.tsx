@@ -111,8 +111,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    WAS HEISST {" "}
+                    <span className="text-primary-500">BARRIEREFREIHEIT</span>
                   </HText>
                 </motion.div>
               </div>
@@ -129,17 +129,20 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5 text-lg">
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-                dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam
+              Barrierefreiheit in der digitalen Welt sorgt dafür, dass Websites, 
+              Apps und alle digitalen Inhalte für Menschen mit Behinderungen nutzbar sind. 
+              Das beinhaltet Anpassungen für Screenreader-Nutzung und Tastaturbedienung. 
+              Der bald EU-weit geltende European Accessibility Act (EAA) macht diese Anpassungen dringend.
+           
+               
               </p>
               <p className="mb-5 text-lg">
-                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                invidunt ut labore et dolore magna aliquyam erat, sed diam
-                voluptua.
+              Er verpflichtet Unternehmen, ihre digitalen Services zugänglich zu machen, damit jeder, 
+               unabhängig von körperlichen Fähigkeiten, gleichen Zugang hat.
+              Dieses Gesetz fördert eine inklusive Gesellschaft und schreibt vor, 
+                hohe Strafen bei Nichtbefolgung zu zahlen. Indem Unternehmen Barrierefreiheitsstandards umsetzen, 
+                vermeiden sie Diskriminierung, 
+              fördern soziale Integration und erreichen ein breiteres Publikum 
               </p>
             </motion.div>
             {/* BUTTON */}

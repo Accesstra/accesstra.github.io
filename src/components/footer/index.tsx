@@ -13,7 +13,6 @@ const Footer = () => {
             mehr zu erfahren und Teil der Bewegung für digitale Inklusion zu
             werden.
           </p>
-          <p>© ACCESSTRA All Rights Reserved.</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0 text-white">
           <h4 className="font-bold">Links</h4>
@@ -23,7 +22,10 @@ const Footer = () => {
         </div>
         <div className="mt-16 basis-1/4 md:mt-0 text-white">
           <h4 className="font-bold">Kontaktieren Sie uns:</h4>
-          <p className="my-5">info@accesstra.tech</p>
+          
+          <p className="my-5">E-mail: info@accesstra.tech</p>
+          <p className="my-5">Tel.: 01782677714</p>
+
         </div>
       </div>
     </footer>

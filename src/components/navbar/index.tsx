@@ -5,7 +5,7 @@ import Link from "./Link";
 import { SelectedPage } from "../../shared/types";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../../shared/ActionButton";
-import AccesstraLogo from "/src/assets/Logo/ACCESSTRA0.svg";
+
 
 
 type Props = {
